@@ -114,8 +114,8 @@ body::after {
     width: 100vw;
     height: 100vh;
     pointer-events: none;
-    z-index: 2; /* between background shapes (0) and page content (3) */
-    opacity: 0.85;
+    z-index: 10;
+    opacity: 0.6;
     mix-blend-mode: screen;
 }
 

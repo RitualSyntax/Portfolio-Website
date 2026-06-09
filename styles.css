@@ -71,17 +71,7 @@ body::before {
     animation: floatB 24s ease-in-out infinite;
 }
 
-/* Very subtle vignette to anchor content */
-body::after {
-    content: '';
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
-    z-index: 1;
-    background: radial-gradient(60% 60% at 50% 50%, rgba(255,255,255,0.01), transparent 40%),
-                linear-gradient(180deg, rgba(0,0,0,0.45), rgba(0,0,0,0.6));
-    mix-blend-mode: multiply;
-}
+/* body::after darkening overlay removed — was killing particle visibility */
 
 @keyframes floatA {
     0% { transform: translate3d(0,0,0) scale(1); }
@@ -102,9 +92,9 @@ body::after {
 .page-shell {
     max-width: 1160px;
     margin: 0 auto;
-    padding: 20px 32px 80px; /* reduce top padding so content sits higher */
+    padding: 20px 32px 80px;
     position: relative;
-    z-index: 3;
+    background: transparent;
 }
 
 /* Background canvas for particle system */
@@ -114,9 +104,9 @@ body::after {
     width: 100vw;
     height: 100vh;
     pointer-events: none;
-    z-index: 10;
-    opacity: 0.9;
-    mix-blend-mode: screen;
+    z-index: 0;
+    opacity: 1;
+    mix-blend-mode: normal;
 }
 
 /* removed scanlines / crt glow to simplify and darken background */

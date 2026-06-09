@@ -77,7 +77,7 @@ body::after {
     position: fixed;
     inset: 0;
     pointer-events: none;
-    z-index: 0;
+    z-index: 1;
     background: radial-gradient(60% 60% at 50% 50%, rgba(255,255,255,0.01), transparent 40%),
                 linear-gradient(180deg, rgba(0,0,0,0.45), rgba(0,0,0,0.6));
     mix-blend-mode: multiply;
@@ -115,8 +115,8 @@ body::after {
     height: 100vh;
     pointer-events: none;
     z-index: 2; /* between background shapes (0) and page content (3) */
-    opacity: 0.36;
-    mix-blend-mode: normal;
+    opacity: 0.85;
+    mix-blend-mode: screen;
 }
 
 /* removed scanlines / crt glow to simplify and darken background */
@@ -924,5 +924,3 @@ body.loaded .page-shell {
 .lightbox-next { right: 0; }
 .lightbox-next::before { content: '›'; }
 .lightbox-nav:hover::before { opacity: 0.18; transform: scale(1.04); }
-
-

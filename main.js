@@ -465,8 +465,8 @@ if (window.performance && window.performance.timing) {
         const dy = a.y - b.y;
         const d2 = dx*dx + dy*dy;
         if (d2 <= maxDist * maxDist) {
-          const alpha = Math.max(0, 0.6 * (1 - (d2 / (maxDist*maxDist))));
-          ctx.strokeStyle = `rgba(160,18,18,${alpha})`;
+          const alpha = Math.max(0, 0.8 * (1 - (d2 / (maxDist*maxDist))));
+          ctx.strokeStyle = `rgba(200,40,40,${alpha})`;
           ctx.beginPath();
           ctx.moveTo(a.x, a.y);
           ctx.lineTo(b.x, b.y);
@@ -487,7 +487,7 @@ if (window.performance && window.performance.timing) {
       if (p.y > height + 10) p.y = -10;
 
       ctx.beginPath();
-      ctx.fillStyle = 'rgba(200,30,30,0.36)';
+      ctx.fillStyle = 'rgba(220,50,50,0.75)';
       ctx.arc(p.x, p.y, p.r, 0, Math.PI*2);
       ctx.fill();
     }

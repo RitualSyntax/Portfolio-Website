@@ -456,7 +456,8 @@ if (window.performance && window.performance.timing) {
 
     // draw connections first (fainter)
     const maxDist = Math.min(140, Math.max(80, (width + height) / 24));
-    ctx.lineWidth = 1;
+    ctx.lineWidth = 0.8;
+    ctx.shadowBlur = 4;
     for (let i = 0; i < particles.length; i++) {
       const a = particles[i];
       for (let j = i + 1; j < particles.length; j++) {
@@ -467,6 +468,7 @@ if (window.performance && window.performance.timing) {
         if (d2 <= maxDist * maxDist) {
           const alpha = Math.max(0, 0.9 * (1 - (d2 / (maxDist*maxDist))));
           ctx.strokeStyle = `rgba(240,235,220,${alpha})`;
+          ctx.shadowColor = `rgba(240,235,220,${alpha * 0.5})`;
           ctx.beginPath();
           ctx.moveTo(a.x, a.y);
           ctx.lineTo(b.x, b.y);
@@ -474,6 +476,7 @@ if (window.performance && window.performance.timing) {
         }
       }
     }
+    ctx.shadowBlur = 0;
 
     // draw particles
     for (let i = 0; i < particles.length; i++) {
@@ -486,10 +489,13 @@ if (window.performance && window.performance.timing) {
       if (p.y < -10) p.y = height + 10;
       if (p.y > height + 10) p.y = -10;
 
+      ctx.shadowBlur = 8;
+      ctx.shadowColor = 'rgba(245,240,220,0.9)';
       ctx.beginPath();
-      ctx.fillStyle = 'rgba(245,240,225,0.9)';
+      ctx.fillStyle = 'rgba(245,240,225,0.95)';
       ctx.arc(p.x, p.y, p.r, 0, Math.PI*2);
       ctx.fill();
+      ctx.shadowBlur = 0;
     }
 
     rafId = window.requestAnimationFrame(step);

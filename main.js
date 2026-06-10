@@ -529,24 +529,24 @@ if (window.performance && window.performance.timing) {
 /* ── PROJECT MODAL ── */
 const PROJECT_DATA = {
   'ritual-syntax-site': {
-    tag: 'Web / Generative',
-    title: 'Ritual Syntax Portfolio Site',
+    tag: '//TAG//',
+    title: '//TITLE//',
     body: `
-      <p>A bespoke portfolio site built from scratch and deployed on GitHub Pages. The brief was personal: occult-editorial aesthetic, dark palette, no templates. Everything is hand-written HTML, CSS, and vanilla JS.</p>
+      <p>//UNDER CONSTRUCTION//</p>
       <h4>Key features</h4>
       <ul>
-        <li>Custom particle network canvas — wrapping nodes connected by proximity lines, dark blood-red ambient gradient overlays</li>
-        <li>Glitch typography using CSS clip animation on pseudo-elements</li>
-        <li>Bento-style gallery grid with live image rotation every 10 seconds — pulling from a pool of Ritual Syntax generative works</li>
-        <li>Splash screen, scroll-reveal animations, and sticky glass-panel nav</li>
-        <li>Artist Colour Tools suite on a separate <code>tools.html</code> page</li>
+        <li>//UNDER CONSTRUCTION//</li>
+        <li>//UNDER CONSTRUCTION//</li>
+        <li>//UNDER CONSTRUCTION//</li>
+        <li>//UNDER CONSTRUCTION//</li>
+        <li>//UNDER CONSTRUCTION//</li>
       </ul>
       <div class="project-modal-divider"></div>
       <h4>Stack</h4>
       <ul>
-        <li>Vanilla HTML / CSS / JS — no frameworks</li>
-        <li>GitHub Pages for hosting</li>
-        <li>JetBrains Mono + custom Broken Mirror display font</li>
+        <li>//UNDER CONSTRUCTION//</li>
+        <li>//UNDER CONSTRUCTION//</li>
+        <li>//UNDER CONSTRUCTION//</li>
       </ul>
     `
   },

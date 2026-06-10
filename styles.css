@@ -329,6 +329,7 @@ main {
 .btn:hover {
     transform: translateY(-3px) scale(1.01);
     box-shadow: 0 18px 34px rgba(0, 0, 0, 0.22);
+    font-colour: rgb(139, 0, 0)
 }
 
 .btn-primary {

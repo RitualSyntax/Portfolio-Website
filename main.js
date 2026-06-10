@@ -525,3 +525,180 @@ if (window.performance && window.performance.timing) {
   // expose for debugging
   window.__bgParticles = { restart: () => { resize(); }, stop: () => { running = false; } };
 })();
+
+/* ── PROJECT MODAL ── */
+const PROJECT_DATA = {
+  'ritual-syntax-site': {
+    tag: 'Web / Generative',
+    title: 'Ritual Syntax Portfolio Site',
+    body: `
+      <p>A bespoke portfolio site built from scratch and deployed on GitHub Pages. The brief was personal: occult-editorial aesthetic, dark palette, no templates. Everything is hand-written HTML, CSS, and vanilla JS.</p>
+      <h4>Key features</h4>
+      <ul>
+        <li>Custom particle network canvas — wrapping nodes connected by proximity lines, dark blood-red ambient gradient overlays</li>
+        <li>Glitch typography using CSS clip animation on pseudo-elements</li>
+        <li>Bento-style gallery grid with live image rotation every 10 seconds — pulling from a pool of Ritual Syntax generative works</li>
+        <li>Splash screen, scroll-reveal animations, and sticky glass-panel nav</li>
+        <li>Artist Colour Tools suite on a separate <code>tools.html</code> page</li>
+      </ul>
+      <div class="project-modal-divider"></div>
+      <h4>Stack</h4>
+      <ul>
+        <li>Vanilla HTML / CSS / JS — no frameworks</li>
+        <li>GitHub Pages for hosting</li>
+        <li>JetBrains Mono + custom Broken Mirror display font</li>
+      </ul>
+    `
+  },
+  'generative-studio': {
+    tag: 'Tool / Generative Art',
+    title: 'Generative Art Studio',
+    body: `
+      <p>A fully self-contained browser-based generative art application. No installation, no dependencies — open the file and start making work. Built as a single HTML artifact with all CSS and JS inlined.</p>
+      <h4>Controls</h4>
+      <ul>
+        <li>Pattern types: flow fields, noise grids, geometric recursion, particle systems</li>
+        <li>Colour gradient builder with custom stop control</li>
+        <li>Symmetry modes: radial, mirror, kaleidoscope</li>
+        <li>Animation toggle with speed control</li>
+        <li>PNG export at full canvas resolution</li>
+      </ul>
+      <div class="project-modal-divider"></div>
+      <p>The studio grew from a need to rapidly prototype ideas for the Ritual Syntax series without the overhead of a full creative coding environment. It's now a standalone tool in its own right.</p>
+    `
+  },
+  'colour-tools': {
+    tag: 'Tool / Design',
+    title: 'Artist Colour Tools',
+    body: `
+      <p>Six practical colour utilities grouped on a single page — designed for artists and designers who need fast, usable results without context-switching to a separate app.</p>
+      <h4>Utilities included</h4>
+      <ul>
+        <li>Palette generator — build cohesive colour sets from a seed colour</li>
+        <li>Contrast checker — WCAG AA/AAA compliance testing</li>
+        <li>Harmony builder — complementary, triadic, split-complementary, analogous</li>
+        <li>Gradient mixer — smooth transitions with configurable stops</li>
+        <li>Colour converter — HEX / RGB / HSL / HSV in both directions</li>
+        <li>Export functions — copy as CSS variables, JSON, or SCSS map</li>
+      </ul>
+      <div class="project-modal-divider"></div>
+      <p>Part of the broader Ritual Syntax tools suite on <code>tools.html</code>. The aesthetic matches the main site — dark, monospace, minimal chrome.</p>
+    `
+  },
+  'alt-staging': {
+    tag: 'Education / Live Events',
+    title: 'Staging Module — Academy of Live Technology',
+    body: `
+      <p>Lead instructor on the Staging module at ALT (Production Park, Wakefield). The module covers the full technical pipeline for video in live performance, from signal flow through to final stage output.</p>
+      <h4>Content areas</h4>
+      <ul>
+        <li>LED wall systems: panel types, processing, pixel mapping, and troubleshooting</li>
+        <li>Projection mapping: surface calibration, warping, soft-edge blending</li>
+        <li>Content creation for live performance: format specs, motion graphics pipeline, real-time media servers</li>
+        <li>Video signal flow: SDI, NDI, HDMI routing and distribution</li>
+        <li>Integration with lighting and sound systems on a live rig</li>
+      </ul>
+      <div class="project-modal-divider"></div>
+      <p>I teach across all year groups and contribute at Masters level. My approach is rooted in industry practice — I was a student in these same rooms before joining the staff, which shapes how I frame difficulty and progression.</p>
+      <div class="project-modal-divider"></div>
+      <h4>Current development</h4>
+      <ul>
+        <li>PGCert in Higher Education — developing formal pedagogical grounding alongside practice-led teaching</li>
+        <li>Supporting new course development ahead of planned expansion</li>
+      </ul>
+    `
+  },
+  'induction-system': {
+    tag: 'Education / Systems',
+    title: 'Student Induction Timetable System',
+    body: `
+      <p>A three-week structured induction timetable designed for approximately 120 students across eight cohort groups. The brief was to introduce core technical production topics progressively while balancing staff availability and shared equipment access.</p>
+      <h4>Design constraints</h4>
+      <ul>
+        <li>120 students split across 8 groups with different start points and prior experience</li>
+        <li>Limited shared equipment — staging, LED rigs, audio systems — requiring careful rotation logic</li>
+        <li>Staff workload balance across specialisms: staging, lighting, sound, and digital</li>
+        <li>Progressive skill introduction: sessions scaffolded so foundational concepts precede technical application</li>
+      </ul>
+      <div class="project-modal-divider"></div>
+      <p>The final output was a colour-coded Excel schedule with staff initials, room/equipment assignments, and session topic labels — built to be readable at a glance by the whole department.</p>
+    `
+  },
+  'uji-series': {
+    tag: 'Generative Art',
+    title: 'Uji Series',
+    body: `
+      <p>An ongoing series of high-resolution generative works exploring flow, time, and emergence. Each piece is parameter-driven and non-repeatable — the same seed will never produce an identical output twice.</p>
+      <p>The series takes its name from the Japanese philosophical concept of <em>uji</em> (有時) — "being-time" — the idea that existence and time are inseparable. The works try to make that legible visually: ordered systems that are always in the process of dissolving.</p>
+      <h4>Technical approach</h4>
+      <ul>
+        <li>Noise-driven flow fields controlling particle trajectory over time</li>
+        <li>Ink-style rendering: variable opacity, line weight tied to velocity</li>
+        <li>Output at 2560×2560px or wider — made for print as much as screen</li>
+        <li>Parameters documented per piece: seed, rotation offset, emitter count, line density, frame count</li>
+      </ul>
+      <div class="project-modal-divider"></div>
+      <p>Active series. New works added as the parameter space is explored. All pieces made under the Ritual Syntax identity.</p>
+    `
+  }
+};
+
+(function() {
+  const modal = document.getElementById('project-modal');
+  const modalBackdrop = document.getElementById('project-modal-backdrop');
+  const modalClose = document.getElementById('project-modal-close');
+  const modalTag = document.getElementById('modal-tag');
+  const modalTitle = document.getElementById('modal-title');
+  const modalBody = document.getElementById('modal-body');
+
+  if (!modal) return;
+
+  const openProjectModal = (projectKey) => {
+    const data = PROJECT_DATA[projectKey];
+    if (!data) return;
+
+    modalTag.textContent = data.tag;
+    modalTitle.textContent = data.title;
+    modalBody.innerHTML = data.body;
+
+    modal.classList.add('show');
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+
+    // scroll panel to top
+    const scroll = modal.querySelector('.project-modal-scroll');
+    if (scroll) scroll.scrollTop = 0;
+
+    // focus close button for accessibility
+    setTimeout(() => { if (modalClose) modalClose.focus(); }, 80);
+  };
+
+  const closeProjectModal = () => {
+    modal.classList.remove('show');
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  };
+
+  // Attach open handlers to all project cards
+  document.querySelectorAll('.project-open-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      const card = btn.closest('.project-card');
+      if (!card) return;
+      const key = card.dataset.project;
+      openProjectModal(key);
+    });
+  });
+
+  // Close via button
+  if (modalClose) modalClose.addEventListener('click', closeProjectModal);
+
+  // Close via backdrop
+  if (modalBackdrop) modalBackdrop.addEventListener('click', closeProjectModal);
+
+  // Close via Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('show')) {
+      closeProjectModal();
+    }
+  });
+})();

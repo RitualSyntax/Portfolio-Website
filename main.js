@@ -533,7 +533,7 @@ const PROJECT_DATA = {
     title: 'This Place is Not A Place of Honour [TPINAPOH]',
     body: `
       <p>// TPINAPOH is a solo immersive installation combining projection mapping and 3D spatial sound, designed to provoke fear, unease, and emotional weight rather than comfort or spectacle. Drawing on works like Koyaanisqatsi, Oppenheimer, Shin Godzilla, and Harlan Ellison's I Have No Mouth, and I Must Scream, the piece explores themes of nuclear dread, technological power, and existential hopelessness. Built without spoken narrative, the audience is guided entirely by sound and image — left to form their own relationship with what they're witnessing. </p>
-      <h4>Key features</h4>
+      <h4>// Key features</h4>
       <ul>
         <li>Projection mapping — custom visual content mapped onto surfaces and a table, created in After Effects and run through Disguise and Resolume, building the core visual language of the piece.</li>
         <li>3D spatial sound — a curated, edited soundtrack using silence as a deliberate compositional tool, with left/right panning to create a pseudo-surround soundscape that guided the audience's emotional journey through three distinct acts.</li>
@@ -542,7 +542,7 @@ const PROJECT_DATA = {
         <li>Nuclear dread as a thematic core — the piece drew on nuclear semiotics, atomic imagery, and the visual language of existential threat to create an experience designed to unsettle rather than entertain.</li>
       </ul>
       <div class="project-modal-divider"></div>
-      <h4>Stack</h4>
+      <h4>// TAGS </h4>
       <ul>
         <li>OSC / MIDI / NETWORKING</li>
         <li>EVENT DESIGN / CONTENT CREATION</li>

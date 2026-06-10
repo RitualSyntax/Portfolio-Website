@@ -550,21 +550,25 @@ const PROJECT_DATA = {
       </ul>
     `
   },
-  'generative-studio': {
-    tag: 'Tool / Generative Art',
-    title: 'Generative Art Studio',
+  'UC': {
+    tag: '//UNDER CONSTRUCTION//',
+    title: '//UNDER CONSTRUCTION//',
     body: `
-      <p>A fully self-contained browser-based generative art application. No installation, no dependencies — open the file and start making work. Built as a single HTML artifact with all CSS and JS inlined.</p>
-      <h4>Controls</h4>
+      <p>//UNDER CONSTRUCTION//</h4>
       <ul>
-        <li>Pattern types: flow fields, noise grids, geometric recursion, particle systems</li>
-        <li>Colour gradient builder with custom stop control</li>
-        <li>Symmetry modes: radial, mirror, kaleidoscope</li>
-        <li>Animation toggle with speed control</li>
-        <li>PNG export at full canvas resolution</li>
+        <li>//UNDER CONSTRUCTION//</li>
+        <li>//UNDER CONSTRUCTION//</li>
+        <li>//UNDER CONSTRUCTION//</li>
+        <li>//UNDER CONSTRUCTION//</li>
+        <li>P//UNDER CONSTRUCTION//</li>
       </ul>
       <div class="project-modal-divider"></div>
-      <p>The studio grew from a need to rapidly prototype ideas for the Ritual Syntax series without the overhead of a full creative coding environment. It's now a standalone tool in its own right.</p>
+      <h4>//UNDER CONSTRUCTION//</h4>
+      <ul>
+        <li>//UNDER CONSTRUCTION//</li>
+        <li>//UNDER CONSTRUCTION//</li>
+        <li>//UNDER CONSTRUCTION//</li>
+      </ul>
     `
   },
   'colour-tools': {

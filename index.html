@@ -20,6 +20,7 @@
         <a href="#home">/</a>
         <a href="#about">About</a>
         <a href="#gallery">Gallery</a>
+        <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
@@ -53,7 +54,12 @@
           <span>01</span>
           <h2>About Me</h2>
         </div>
-        <p>I’m Elliot, im an instructor at the Academy of Live Technology focused on art, creative direction and video. I make visual work and learning experiences that prioritize motion, composition, and storytelling.</p>
+        <div class="about-body">
+          <p>I'm Elliot — an instructor, artist, and live events technician based in Ipswich. I've spent the last six years at the <strong>Academy of Live Technology (ALT)</strong> at Production Park: first as a student completing both my BA (Hons) and MA there, now as a member of staff. That trajectory shapes how I teach — I know exactly what it's like to sit in those seats.</p>
+          <p>My specialist area is <strong>video for live performance</strong>: LED walls, projection mapping, and content creation for live events. I lead the Staging module and contribute across all year groups and courses, up to Masters level. I'm currently working towards a <strong>PGCert in Higher Education</strong>, developing the academic side of a career that's always been hands-on first.</p>
+          <p>Outside the day job I run <strong>Ritual Syntax</strong> — a generative and digital abstract art practice. The work is rooted in systems, noise, and controlled chaos: code-driven visuals that sit somewhere between occult aesthetics and technical process. This site is part of that practice.</p>
+          <p>I also build tools — colour utilities, generative studios, scheduling systems — wherever a problem exists that a bit of code can solve more elegantly than anything else available.</p>
+        </div>
       </section>
 
       <section id="gallery" class="section gallery-section">
@@ -110,9 +116,75 @@
         </div>
       </section>
 
-      <section id="contact" class="section contact-section">
+      <!-- ── PROJECTS SECTION ── -->
+      <section id="projects" class="section projects-section">
         <div class="section-header">
           <span>03</span>
+          <h2>Projects</h2>
+        </div>
+        <div class="projects-grid">
+
+          <article class="project-card" data-project="ritual-syntax-site">
+            <div class="project-card-inner">
+              <div class="project-tag">Web / Generative</div>
+              <h3>Ritual Syntax Portfolio Site</h3>
+              <p>Dark occult-editorial portfolio built from scratch on GitHub Pages. Custom particle canvas system, glitch typography, bento gallery with live image rotation.</p>
+              <button class="btn btn-secondary project-open-btn" type="button">View Details</button>
+            </div>
+          </article>
+
+          <article class="project-card" data-project="generative-studio">
+            <div class="project-card-inner">
+              <div class="project-tag">Tool / Generative Art</div>
+              <h3>Generative Art Studio</h3>
+              <p>Browser-based generative art tool with pattern types, colour gradients, symmetry controls, animation and PNG export. Built as a self-contained single-file app.</p>
+              <button class="btn btn-secondary project-open-btn" type="button">View Details</button>
+            </div>
+          </article>
+
+          <article class="project-card" data-project="colour-tools">
+            <div class="project-card-inner">
+              <div class="project-tag">Tool / Design</div>
+              <h3>Artist Colour Tools</h3>
+              <p>Six colour utilities built for practical creative use: palette generators, contrast checkers, harmony builders, and export functions. Part of the Ritual Syntax tools suite.</p>
+              <button class="btn btn-secondary project-open-btn" type="button">View Details</button>
+            </div>
+          </article>
+
+          <article class="project-card" data-project="alt-staging">
+            <div class="project-card-inner">
+              <div class="project-tag">Education / Live Events</div>
+              <h3>Staging Module — ALT</h3>
+              <p>Lead instructor on the Staging module at the Academy of Live Technology. Covers LED wall operation, projection mapping, video signal flow, and live production workflow across all year groups.</p>
+              <button class="btn btn-secondary project-open-btn" type="button">View Details</button>
+            </div>
+          </article>
+
+          <article class="project-card" data-project="induction-system">
+            <div class="project-card-inner">
+              <div class="project-tag">Education / Systems</div>
+              <h3>Student Induction Timetable System</h3>
+              <p>Three-week induction schedule for ~120 students across eight groups covering technical production topics. Designed to balance resource allocation, staff workload, and progressive skill introduction.</p>
+              <button class="btn btn-secondary project-open-btn" type="button">View Details</button>
+            </div>
+          </article>
+
+          <article class="project-card" data-project="uji-series">
+            <div class="project-card-inner">
+              <div class="project-tag">Generative Art</div>
+              <h3>Uji Series</h3>
+              <p>Ongoing series of high-resolution generative works using flow fields, noise functions, and ink-style rendering. Each piece is parameter-driven and non-repeatable — named after the Japanese concept of existence in time.</p>
+              <button class="btn btn-secondary project-open-btn" type="button">View Details</button>
+            </div>
+          </article>
+
+        </div>
+      </section>
+      <!-- ── END PROJECTS ── -->
+
+      <section id="contact" class="section contact-section">
+        <div class="section-header">
+          <span>04</span>
           <h2>Contact Me</h2>
         </div>
         <div class="contact-grid">
@@ -163,6 +235,19 @@
       <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Previous image"></button>
       <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Next image"></button>
       <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- Project detail popup -->
+  <div class="project-modal" id="project-modal" aria-hidden="true" role="dialog" aria-label="Project details">
+    <div class="project-modal-backdrop" id="project-modal-backdrop"></div>
+    <div class="project-modal-panel" role="document">
+      <button class="project-modal-close" id="project-modal-close" aria-label="Close project">×</button>
+      <div class="project-modal-scroll">
+        <div class="project-modal-tag" id="modal-tag"></div>
+        <h2 class="project-modal-title" id="modal-title"></h2>
+        <div class="project-modal-body" id="modal-body"></div>
+      </div>
     </div>
   </div>
 

@@ -655,7 +655,7 @@ main {
 }
 
 .social-links a:hover {
-    color: #7a6bff;
+    color: rgb(139, 0, 0);
     transform: scale(1.15);
 }
 

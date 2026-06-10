@@ -408,7 +408,7 @@ main {
 
 .gallery-card:hover {
     transform: translateY(-8px);
-    border-color: rgba(122, 107, 255, 0.42);
+    border-color: rgb(139, 0, 0);
     box-shadow: 0 28px 56px rgba(0,0,0,0.22);
 }
 

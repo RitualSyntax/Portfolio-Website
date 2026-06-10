@@ -528,25 +528,25 @@ if (window.performance && window.performance.timing) {
 
 /* ── PROJECT MODAL ── */
 const PROJECT_DATA = {
-  'ritual-syntax-site': {
-    tag: '//TAG//',
-    title: '//TITLE//',
+  'TPINAPOH': {
+    tag: '//EVENT//',
+    title: 'This Place is Not A Place of Honour [TPINAPOH]',
     body: `
-      <p>//UNDER CONSTRUCTION//</p>
+      <p>// TPINAPOH is a solo immersive installation combining projection mapping and 3D spatial sound, designed to provoke fear, unease, and emotional weight rather than comfort or spectacle. Drawing on works like Koyaanisqatsi, Oppenheimer, Shin Godzilla, and Harlan Ellison's I Have No Mouth, and I Must Scream, the piece explores themes of nuclear dread, technological power, and existential hopelessness. Built without spoken narrative, the audience is guided entirely by sound and image — left to form their own relationship with what they're witnessing. </p>
       <h4>Key features</h4>
       <ul>
-        <li>//UNDER CONSTRUCTION//</li>
-        <li>//UNDER CONSTRUCTION//</li>
-        <li>//UNDER CONSTRUCTION//</li>
-        <li>//UNDER CONSTRUCTION//</li>
-        <li>//UNDER CONSTRUCTION//</li>
+        <li>Projection mapping — custom visual content mapped onto surfaces and a table, created in After Effects and run through Disguise and Resolume, building the core visual language of the piece.</li>
+        <li>3D spatial sound — a curated, edited soundtrack using silence as a deliberate compositional tool, with left/right panning to create a pseudo-surround soundscape that guided the audience's emotional journey through three distinct acts.</li>
+        <li>Narrative-free structure — no spoken word or directing voice; the audience was left entirely to their own interpretation, with sound and image doing all the work.</li>
+        <li>Full show control integration — lighting, video, and audio synced via MIDI and OSC so the entire show could be triggered from a single button press on a phone, built and run solo.</li>
+        <li>Nuclear dread as a thematic core — the piece drew on nuclear semiotics, atomic imagery, and the visual language of existential threat to create an experience designed to unsettle rather than entertain.</li>
       </ul>
       <div class="project-modal-divider"></div>
       <h4>Stack</h4>
       <ul>
-        <li>//UNDER CONSTRUCTION//</li>
-        <li>//UNDER CONSTRUCTION//</li>
-        <li>//UNDER CONSTRUCTION//</li>
+        <li>OSC / MIDI / NETWORKING</li>
+        <li>EVENT DESIGN / CONTENT CREATION</li>
+        <li>VIDEO / LIGHTING / SOUND</li>
       </ul>
     `
   },

@@ -90,9 +90,9 @@ const galleryImages = [
   'src/images/uji_2026-03-11T10.03.45.997Z_r160ro-0.65e1.005ex1.006t0.5i115w2560h2560c0ca0can0l255li28line0.12f1000wa848j10fa104exp42expa-54canva0.27sh-10.png',
   'src/images/uji_2026-03-11T16.25.37.819Z_r160ro-0.65e1.005ex1.006t0.5i402w2560h1406c0ca0can0l255li18line0.05f1000wa300j10.png'
   'src/images/CUBE_ntsc.png
-  '/src/images/src/images/Cathedral_comp3_ntsc.png'
-  '/src/images/STATION_4.png'
-  '/src/images/photism-20260925-130313.mp4'
+  'src/images/Cathedral_comp3_ntsc.png'
+  'src/images/STATION_4.png'
+  'src/images/photism-20260925-130313.mp4'
 ];
 
 const shuffle = (array) => {
